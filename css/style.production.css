@@ -1,0 +1,279 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: defaults
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f3f2ee;
+  font-family: 'Poppins', sans-serif;
+}
+
+a {
+  color: #090906;
+}
+
+p {
+  color: #090906;
+}
+
+.page-header {
+  display: flex;
+  width: 100%;
+  padding: 20px;
+}
+
+.page-footer {
+  clear: both;
+  margin: 30px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.social-media {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid black;
+  padding: 10px;
+}
+
+h1 {
+  font-size: 30px;
+  font-weight: 70px;
+  line-height: 3;
+  color: #090906;
+}
+
+.profile {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.menu-bar {
+  line-height: 25px;
+}
+
+.page-header_item:last-child {
+  flex-grow: 1;
+  text-align: right;
+}
+
+.profile_portrait {
+  float: left;
+  width: 50%;
+  max-width: 250px;
+  margin-right: 40px;
+  border-radius: 50%;
+  border: 3px solid black;
+}
+
+.navigation-list {
+  list-style-type: none;
+}
+
+.navigation-list li {
+  display: inline-block;
+  margin-left: 15px;
+}
+
+.main-description {
+  padding: 30px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+  border: 1px;
+  border-color: #090906;
+}
+
+.grid__item {
+  background-color: #bab69b;
+  color: #090906;
+  padding: 10px;
+}
+
+.grid__item-link {
+  color: #090906;
+}
+
+.grid__item-link:hover {
+  color: #43412e;
+}
+
+.button {
+  /* overwrites browser defaults and resets the border */
+  border: none;
+  display: inline-block;
+  /* takes the font from the outer container */
+  font-family: inherit;
+  /* styles the button */
+  background-color: #bab69b;
+  color: #090906;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 3px;
+  /* width of the border, type, color */
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+  transition-duration: 0.2s;
+  transition-property: opacity;
+}
+
+button {
+  /* overwrites browser defaults and resets the border */
+  border: none;
+  display: inline-block;
+  /* takes the font from the outer container */
+  font-family: inherit;
+  /* styles the button */
+  background-color: #bab69b;
+  color: #090906;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 3px;
+  /* width of the border, type, color */
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+  transition-duration: 0.2s;
+  transition-property: opacity;
+}
+
+button:hover,
+button:focus,
+.button:hover,
+.button:focus {
+  /* lets the mouse appear as a hand when hovering over the button */
+  cursor: pointer;
+  /* reduces the opacity of the button to 80% */
+  opacity: 0.8;
+}
+
+@-webkit-keyframes color-change {
+  from {
+    fill: #edc655;
+  }
+  to {
+    fill: #f76414;
+  }
+}
+
+@keyframes color-change {
+  from {
+    fill: #edc655;
+  }
+  to {
+    fill: #f76414;
+  }
+}
+
+.sun {
+  -webkit-animation: 4s color-change infinite alternate linear;
+          animation: 4s color-change infinite alternate linear;
+}
+
+@-webkit-keyframes cloud-move {
+  from {
+    transform: translate(0, 50px);
+  }
+  to {
+    transform: translate(200px, 50px);
+  }
+}
+
+@keyframes cloud-move {
+  from {
+    transform: translate(0, 50px);
+  }
+  to {
+    transform: translate(200px, 50px);
+  }
+}
+
+.cloud-front {
+  -webkit-animation: 30s cloud-move infinite alternate linear;
+          animation: 30s cloud-move infinite alternate linear;
+}
+
+
+@-webkit-keyframes cloud-move-reverse {
+  from {
+    transform: translate(446px, 48px);
+  }
+  to {
+    transform: translate(100px, 48px);
+  }
+}
+
+
+@keyframes cloud-move-reverse {
+  from {
+    transform: translate(446px, 48px);
+  }
+  to {
+    transform: translate(100px, 48px);
+  }
+}
+
+
+
+
+a {
+  color: #090906;
+}
+
+a:visited {
+  /* visited link */
+  color: #43412e;
+}
+
+a:hover {
+  color: #bab69b;
+  text-decoration: none;
+}
+
+a:focus {
+  color: #bab69b;
+  text-decoration: none;
+}
+
+
+a:active {
+  /* selected link */
+  color: #090906;
+}
+
+
+
+@media all and (max-width: 750px){
+  .grid {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+  }
+  .grid__item:last-child {
+    grid-column: auto / auto;
+    grid-row: auto / auto;
+  }
+  h1 {
+    font-size: 30px;       
+  }
+}
+
+@media all and (max-width: 500px) {
+  .grid {
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+  }
+  .grid__item:last-child {
+    grid-column: auto / auto;
+    grid-row: auto / auto;
+  }
+  h1 {
+    font-size: 30px;
+  }
+}
