@@ -259,9 +259,6 @@ a:active {
     grid-column: auto / auto;
     grid-row: auto / auto;
   }
-  h1 {
-    font-size: 30px;       
-  }
 }
 
 @media all and (max-width: 500px) {
@@ -272,8 +269,5 @@ a:active {
   .grid__item:last-child {
     grid-column: auto / auto;
     grid-row: auto / auto;
-  }
-  h1 {
-    font-size: 30px;
   }
 }
